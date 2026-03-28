@@ -11,7 +11,7 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(201,168,76,0.06) 0%,transparent 70%);pointer-events:none;z-index:0}
-
+ 
 /* HEADER */
 header{position:fixed;top:0;left:0;right:0;z-index:300;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:rgba(10,10,10,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 @media(min-width:768px){header{height:68px;padding:0 40px}}
@@ -30,7 +30,7 @@ nav.desk a:hover{color:var(--text)}
 .burger{display:flex;flex-direction:column;gap:5px;width:24px;cursor:pointer;padding:4px;background:none;border:none}
 @media(min-width:900px){.burger{display:none}}
 .burger span{display:block;height:2px;background:var(--text2);border-radius:2px;transition:all var(--t)}
-
+ 
 /* MOBILE DRAWER */
 .drawer{position:fixed;top:60px;left:0;right:0;bottom:0;z-index:290;background:rgba(10,10,10,0.98);backdrop-filter:blur(20px);transform:translateY(-110%);opacity:0;transition:transform .3s ease,opacity .3s ease;pointer-events:none;display:flex;flex-direction:column;padding:28px 24px;gap:4px}
 .drawer.open{transform:translateY(0);opacity:1;pointer-events:all}
@@ -38,11 +38,11 @@ nav.desk a:hover{color:var(--text)}
 .drawer a:active{color:var(--gold)}
 .drawer-btns{display:flex;flex-direction:column;gap:10px;margin-top:20px}
 .drawer-btns button,.drawer-btns a{padding:14px;font-size:15px;border-radius:12px;text-align:center;width:100%}
-
+ 
 /* MAIN */
 main{position:relative;z-index:1;padding-top:60px}
 @media(min-width:768px){main{padding-top:68px}}
-
+ 
 /* HERO */
 .hero{min-height:calc(100svh - 60px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px 60px}
 @media(min-width:768px){.hero{padding:80px 40px}}
@@ -64,7 +64,7 @@ main{position:relative;z-index:1;padding-top:60px}
 .stat{text-align:center}
 .stat-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,8vw,44px);color:var(--gold);letter-spacing:2px}
 .stat-label{font-size:11px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-top:2px}
-
+ 
 /* SECTIONS */
 section{padding:60px 20px}
 @media(min-width:768px){section{padding:100px 40px}}
@@ -74,7 +74,7 @@ section{padding:60px 20px}
 @media(min-width:768px){.stext{font-size:15px}}
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:0 20px}
 @media(min-width:768px){.divider{margin:0 40px}}
-
+ 
 /* FEATURES */
 .features{max-width:1100px;margin:0 auto}
 .features-header{margin-bottom:36px}
@@ -89,7 +89,7 @@ section{padding:60px 20px}
 .ft{font-size:13px;font-weight:600;margin-bottom:5px;color:var(--text)}
 @media(min-width:768px){.ft{font-size:15px}}
 .fd{font-size:12px;color:var(--text2);line-height:1.6}
-
+ 
 /* LOCATIONS */
 .lsec{max-width:1100px;margin:0 auto}
 .lgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:32px}
@@ -104,7 +104,7 @@ section{padding:60px 20px}
 .lstatus{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#4ade80}
 .lstatus::before{content:'';width:5px;height:5px;border-radius:50%;background:#4ade80}
 .lload{font-size:11px;color:var(--text3);margin-top:5px}
-
+ 
 /* PRICING */
 .psec{max-width:840px;margin:0 auto}
 .pgrid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
@@ -122,7 +122,7 @@ section{padding:60px 20px}
 .pfeats li{font-size:12px;color:var(--text2);padding:5px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px}
 @media(min-width:768px){.pfeats li{font-size:13px}}
 .pfeats li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0}
-
+ 
 /* APPS */
 .asec{max-width:1100px;margin:0 auto}
 .cstep{display:flex;align-items:center;gap:12px;margin:40px 0 18px}
@@ -141,7 +141,7 @@ section{padding:60px 20px}
 .aos{font-size:10px;color:var(--text2);margin-top:2px}
 .abadges{display:flex;gap:4px;margin-top:5px;flex-wrap:wrap}
 .abadge{font-size:9px;color:var(--gold);border:1px solid var(--gold-border);border-radius:4px;padding:2px 5px}
-
+ 
 /* IMPORT BLOCK */
 .iblock{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 .ilocked{padding:32px 20px;text-align:center}
@@ -168,7 +168,14 @@ section{padding:60px 20px}
 .iurl{flex:1;min-width:0;background:var(--bg3);border:1px solid var(--gold-border);border-radius:8px;padding:9px 12px;font-family:'Courier New',monospace;font-size:11px;color:var(--gold);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cbtn{padding:8px 14px;background:transparent;border:1px solid var(--gold-border);border-radius:8px;color:var(--gold);font-size:12px;font-family:'Inter',sans-serif;cursor:pointer;transition:all var(--t);white-space:nowrap;flex-shrink:0}
 .cbtn:hover{background:var(--gold-dim)}
-
+ 
+/* PLATFORM TABS */
+.ptabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.ptab{padding:8px 16px;background:transparent;border:1px solid var(--border);border-radius:8px;color:var(--text2);font-size:13px;font-family:'Inter',sans-serif;cursor:pointer;transition:all var(--t)}
+.ptab:hover{border-color:var(--gold-border);color:var(--text)}
+.ptab.on{background:var(--gold);color:#0a0a0a;border-color:var(--gold);font-weight:600}
+.tv-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:32px 24px;text-align:center;max-width:400px}
+ 
 /* MODAL */
 .moverlay{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);align-items:flex-end;justify-content:center;padding:0}
 @media(min-width:580px){.moverlay{align-items:center;padding:20px}}
@@ -185,13 +192,13 @@ section{padding:60px 20px}
 .tabs{display:flex;background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:3px;margin-bottom:22px}
 .tab{flex:1;padding:9px;background:transparent;border:none;border-radius:8px;color:var(--text2);font-size:13px;font-family:'Inter',sans-serif;cursor:pointer;transition:all var(--t)}
 .tab.on{background:var(--gold);color:#0a0a0a;font-weight:600}
-
+ 
 /* username OR phone row */
 .frow{display:flex;align-items:stretch;margin-bottom:14px}
 .frow input:first-child{border-radius:10px 0 0 10px;border-right-color:transparent}
 .frow input:last-child{border-radius:0 10px 10px 0;border-left-color:transparent}
 .frow-sep{display:flex;align-items:center;padding:0 8px;font-size:11px;color:var(--text3);background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);white-space:nowrap;flex-shrink:0}
-
+ 
 .fg2{margin-bottom:13px}
 .fg2 label{display:block;font-size:11px;color:var(--text2);letter-spacing:.5px;margin-bottom:6px}
 .fin{width:100%;padding:12px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:14px;font-family:'Inter',sans-serif;outline:none;transition:border-color var(--t);-webkit-appearance:none}
@@ -204,7 +211,7 @@ section{padding:60px 20px}
 .fnote a{color:var(--gold);text-decoration:none}
 .alert{padding:11px 14px;border-radius:8px;font-size:13px;margin-bottom:12px;display:none}
 .alert.err{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.3);color:#f87171;display:block}
-
+ 
 /* PAYMENT */
 .pplans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
 .pp{border:1px solid var(--border);border-radius:10px;padding:14px;cursor:pointer;transition:all var(--t);background:var(--bg3)}
@@ -218,7 +225,7 @@ section{padding:60px 20px}
 .pm:hover{border-color:var(--gold-border);color:var(--text)}
 .pm.on{border-color:var(--gold);color:var(--gold)}
 .pmi{font-size:18px;display:block;margin-bottom:3px}
-
+ 
 /* DASHBOARD */
 .dash{position:fixed;inset:0;z-index:250;background:var(--bg);overflow-y:auto;pointer-events:none;opacity:0;transform:translateY(24px);transition:opacity .25s ease,transform .25s ease}
 .dash.on{pointer-events:all;opacity:1;transform:translateY(0)}
@@ -249,7 +256,7 @@ section{padding:60px 20px}
 .tgidv{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,4vw,24px);color:var(--gold);letter-spacing:2px}
 .tghint{font-size:11px;color:var(--text3)}
 .dagrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;margin-bottom:4px}
-
+ 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--safe-bottom));display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px}
 @media(min-width:768px){footer{padding:44px 40px;align-items:center}}
@@ -259,14 +266,14 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
 @media(min-width:480px){.flinks{flex-direction:row;gap:18px;align-items:center}}
 .flinks a{font-size:13px;color:var(--text3);text-decoration:none;transition:color var(--t)}
 .flinks a:hover{color:var(--gold)}
-
+ 
 /* TOAST */
 .toast{position:fixed;bottom:calc(16px + var(--safe-bottom));left:50%;transform:translateX(-50%) translateY(16px);background:var(--bg2);border:1px solid var(--gold-border);border-radius:10px;padding:11px 18px;font-size:13px;color:var(--text);z-index:9999;opacity:0;transition:all .3s ease;pointer-events:none;white-space:nowrap;max-width:calc(100vw - 32px);text-align:center}
 .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
 </style>
 </head>
 <body>
-
+ 
 <header>
   <a href="#" class="logo" onclick="closeDash()">PEGAS</a>
   <nav class="desk">
@@ -281,7 +288,7 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
   </div>
   <button class="burger" onclick="toggleDrawer()"><span></span><span></span><span></span></button>
 </header>
-
+ 
 <div class="drawer" id="drawer">
   <a href="#features" onclick="closeDrawer()">Возможности</a>
   <a href="#locations" onclick="closeDrawer()">Локации</a>
@@ -292,7 +299,7 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     <button class="btn-gold" onclick="closeDrawer();openM('register')">Начать бесплатно</button>
   </div>
 </div>
-
+ 
 <main>
 <section class="hero">
   <div class="hero-badge">24/7 ONLINE · СТАБИЛЬНО</div>
@@ -309,9 +316,9 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     <div class="stat"><div class="stat-num">&lt;60с</div><div class="stat-label">Подключение</div></div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <section id="features">
   <div class="features">
     <div class="features-header">
@@ -329,9 +336,9 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <section id="locations">
   <div class="lsec">
     <div class="slabel">Серверы</div>
@@ -345,9 +352,9 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <section id="pricing">
   <div class="psec">
     <div class="slabel">Тарифы</div>
@@ -372,26 +379,72 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     </div>
   </div>
 </section>
-
+ 
 <div class="divider"></div>
-
+ 
 <section id="apps">
   <div class="asec">
     <div class="slabel">Приложения</div>
     <h2 class="stitle">ПОДКЛЮЧИТЬ<br>PEGAS</h2>
-    <p class="stext">Скачай приложение, затем нажми «Автоимпорт» — всё настроится само.</p>
+    <p class="stext">Скачай приложение для своей платформы, затем нажми «Автоимпорт» — всё настроится само.</p>
+ 
     <div class="cstep"><div class="cnum">01</div><div class="ctitle">Скачай приложение</div></div>
-    <div class="agrid2">
-      <a class="acard" href="https://apps.apple.com/app/v2raytun/id6476628951" target="_blank">
-        <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><path d="M22 8C14.27 8 8 14.27 8 22s6.27 14 14 14 14-6.27 14-14S29.73 8 22 8zm0 6a3 3 0 110 6 3 3 0 010-6zm0 20c-3.87 0-7.29-1.97-9.33-4.97.05-3.09 6.22-4.78 9.33-4.78s9.28 1.69 9.33 4.78A11.17 11.17 0 0122 34z" fill="#C9A84C"/></svg></div>
-        <div><div class="aname">v2RayTun</div><div class="aos">iOS · Android</div><div class="abadges"><div class="abadge">App Store</div><div class="abadge">Play</div></div></div>
-      </a>
-      <a class="acard" href="https://play.google.com/store/apps/details?id=com.happ.vpn" target="_blank">
-        <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <div><div class="aname">Happ</div><div class="aos">Android</div><div class="abadges"><div class="abadge">Play</div></div></div>
-      </a>
+ 
+    <div class="ptabs">
+      <button class="ptab on" onclick="showPlt('ios',this)">iOS / Mac</button>
+      <button class="ptab" onclick="showPlt('android',this)">Android</button>
+      <button class="ptab" onclick="showPlt('windows',this)">Windows</button>
+      <button class="ptab" onclick="showPlt('tv',this)">Smart TV</button>
     </div>
-    <div class="cstep" style="margin-top:36px"><div class="cnum">02</div><div class="ctitle">Автоимпорт</div></div>
+ 
+    <div id="plt-ios">
+      <div class="agrid2" style="max-width:600px">
+        <a class="acard" href="https://apps.apple.com/ru/app/v2raytun/id6476628951" target="_blank">
+          <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><path d="M22 8C14.27 8 8 14.27 8 22s6.27 14 14 14 14-6.27 14-14S29.73 8 22 8zm0 6a3 3 0 110 6 3 3 0 010-6zm0 20c-3.87 0-7.29-1.97-9.33-4.97.05-3.09 6.22-4.78 9.33-4.78s9.28 1.69 9.33 4.78A11.17 11.17 0 0122 34z" fill="#C9A84C"/></svg></div>
+          <div><div class="aname">v2RayTun</div><div class="aos">iPhone · iPad · Mac</div><div class="abadges"><div class="abadge">App Store</div></div></div>
+        </a>
+        <a class="acard" href="https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973" target="_blank">
+          <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><div class="aname">Happ</div><div class="aos">iPhone · iPad · Mac</div><div class="abadges"><div class="abadge">App Store</div></div></div>
+        </a>
+      </div>
+    </div>
+    <div id="plt-android" style="display:none">
+      <div class="agrid2" style="max-width:600px">
+        <a class="acard" href="https://play.google.com/store/apps/details?id=com.v2raytun.android" target="_blank">
+          <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><path d="M22 8C14.27 8 8 14.27 8 22s6.27 14 14 14 14-6.27 14-14S29.73 8 22 8zm0 6a3 3 0 110 6 3 3 0 010-6zm0 20c-3.87 0-7.29-1.97-9.33-4.97.05-3.09 6.22-4.78 9.33-4.78s9.28 1.69 9.33 4.78A11.17 11.17 0 0122 34z" fill="#C9A84C"/></svg></div>
+          <div><div class="aname">v2RayTun</div><div class="aos">Android</div><div class="abadges"><div class="abadge">Google Play</div></div></div>
+        </a>
+        <a class="acard" href="https://play.google.com/store/apps/details?id=com.happproxy" target="_blank">
+          <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><div class="aname">Happ</div><div class="aos">Android</div><div class="abadges"><div class="abadge">Google Play</div></div></div>
+        </a>
+      </div>
+    </div>
+    <div id="plt-windows" style="display:none">
+      <div class="agrid2" style="max-width:600px">
+        <a class="acard" href="https://storage.v2raytun.com/v2RayTun_Setup.exe" target="_blank">
+          <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><rect x="8" y="8" width="12" height="12" rx="2" fill="#C9A84C"/><rect x="24" y="8" width="12" height="12" rx="2" fill="#C9A84C" opacity=".6"/><rect x="8" y="24" width="12" height="12" rx="2" fill="#C9A84C" opacity=".6"/><rect x="24" y="24" width="12" height="12" rx="2" fill="#C9A84C" opacity=".3"/></svg></div>
+          <div><div class="aname">v2RayTun</div><div class="aos">Windows</div><div class="abadges"><div class="abadge">.exe скачать</div></div></div>
+        </a>
+        <a class="acard" href="https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.1/setup-Happ.x64.exe" target="_blank">
+          <div class="aiw"><svg width="38" height="38" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#1a1a1a"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><div class="aname">Happ</div><div class="aos">Windows</div><div class="abadges"><div class="abadge">.exe скачать</div></div></div>
+        </a>
+      </div>
+    </div>
+    <div id="plt-tv" style="display:none">
+      <div class="tv-card">
+        <div style="font-size:32px;margin-bottom:14px">📺</div>
+        <div style="font-size:16px;font-weight:600;margin-bottom:8px;color:var(--text)">Подключение на Smart TV</div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:18px;max-width:360px">Пошаговая инструкция по настройке Pegas VPN на телевизоре — Samsung, LG, Android TV.</p>
+        <a href="https://telegra.ph/Instrukciya-po-podklyucheniyu-03-09-4" target="_blank" class="btn-gold" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:12px 24px;font-size:14px">
+          Открыть инструкцию <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+ 
+    <div class="cstep" style="margin-top:40px"><div class="cnum">02</div><div class="ctitle">Автоимпорт</div></div>
     <div class="iblock">
       <div class="ilocked" id="ilocked">
         <div class="ilock-icon">🔐</div>
@@ -402,12 +455,12 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
       <div class="iready" id="iready" style="display:none">
         <div class="icgrid">
           <div class="icard">
-            <div class="ictop"><div class="icicon">📱</div><div><div class="icname">v2RayTun</div><div class="icos">iOS · Android</div></div></div>
+            <div class="ictop"><div class="icicon">📱</div><div><div class="icname">v2RayTun</div><div class="icos">iOS · Mac · Android · Windows</div></div></div>
             <div class="icdesc">Открой v2RayTun, нажми кнопку — конфиг добавится автоматически</div>
             <a id="iLinkV2" href="#" class="ibtn" onclick="doImport(event,'v2raytun')">Автоимпорт в v2RayTun <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
           <div class="icard">
-            <div class="ictop"><div class="icicon">▶️</div><div><div class="icname">Happ</div><div class="icos">Android</div></div></div>
+            <div class="ictop"><div class="icicon">▶️</div><div><div class="icname">Happ</div><div class="icos">iOS · Mac · Android · Windows</div></div></div>
             <div class="icdesc">Открой Happ, нажми кнопку — профиль добавится автоматически</div>
             <a id="iLinkHapp" href="#" class="ibtn" onclick="doImport(event,'happ')">Автоимпорт в Happ <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
@@ -421,7 +474,7 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
   </div>
 </section>
 </main>
-
+ 
 <footer>
   <div><div class="flogo">PEGAS</div><div class="fcopy">© 2025 Pegas VPN</div></div>
   <div class="flinks">
@@ -431,7 +484,7 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     <a href="https://telegra.ph/Polzovatelskoe-soglashenie-08-15-10" target="_blank">Соглашение</a>
   </div>
 </footer>
-
+ 
 <!-- AUTH MODAL -->
 <div class="moverlay" id="authM">
   <div class="modal">
@@ -444,14 +497,14 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
       <button class="tab" id="tReg" onclick="swTab('register')">Регистрация</button>
     </div>
     <div id="alertBox"></div>
-
+ 
     <div id="loginF">
       <div class="fg2"><label>НОМЕР ТЕЛЕФОНА</label><input class="fin" type="tel" id="lPhone" placeholder="+7 999 000 00 00" autocomplete="tel" inputmode="tel"></div>
       <div class="fg2"><label>ПАРОЛЬ</label><input class="fin" type="password" id="lPass" placeholder="••••••••" autocomplete="current-password"></div>
       <button class="fsub" onclick="doLogin()">Войти в аккаунт</button>
       <div class="fnote">Нет аккаунта? <a href="#" onclick="swTab('register')">Зарегистрируйся</a></div>
     </div>
-
+ 
     <div id="regF" style="display:none">
       <div class="fg2"><label>НОМЕР ТЕЛЕФОНА</label><input class="fin" type="tel" id="rPhone" placeholder="+7 999 000 00 00" autocomplete="tel" inputmode="tel"></div>
       <div class="fg2"><label>ПАРОЛЬ</label><input class="fin" type="password" id="rPass" placeholder="Минимум 6 символов" autocomplete="new-password"></div>
@@ -461,7 +514,28 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     </div>
   </div>
 </div>
-
+ 
+<!-- QUICK TELEGRAM BIND MODAL -->
+<div class="moverlay" id="tgBindM">
+  <div class="modal" style="max-width:400px;text-align:center">
+    <div class="mdrag"></div>
+    <button class="mclose" onclick="stopBindPolling();closeM('tgBindM');openDash()">✕</button>
+    <div style="font-size:40px;margin-bottom:16px">✅</div>
+    <div class="mlogo">PEGAS</div>
+    <div style="font-size:15px;font-weight:600;margin-bottom:8px;color:var(--text)" id="tgBindWelcome">Аккаунт создан!</div>
+    <div style="font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:24px">Привяжи Telegram-бот — это нужно для получения ключа подключения. Нажми кнопку и напиши боту команду <code style="color:var(--gold);background:var(--bg3);padding:2px 6px;border-radius:4px">/start</code></div>
+    <div style="background:var(--bg3);border:1px solid var(--gold-border);border-radius:10px;padding:12px 16px;margin-bottom:20px">
+      <div style="font-size:10px;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin-bottom:4px">Твой Pegas ID</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--gold);letter-spacing:2px" id="tgBindId">—</div>
+    </div>
+    <a id="tgBindLink" href="#" target="_blank" class="fsub" style="display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;margin-bottom:12px">
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm3.93 5.4l-1.35 6.36c-.1.45-.37.56-.75.35l-2.08-1.53-1 .97c-.11.11-.21.2-.43.2l.15-2.13 3.9-3.52c.17-.15-.04-.23-.26-.09L4.27 9.77 2.22 9.14c-.45-.14-.46-.45.09-.67l7.67-2.96c.38-.14.71.09.59.67z" fill="currentColor"/></svg>
+      Открыть Telegram и привязать
+    </a>
+    <button onclick="stopBindPolling();closeM('tgBindM');openDash()" style="width:100%;padding:11px;background:transparent;border:1px solid var(--border);border-radius:10px;color:var(--text2);font-size:13px;font-family:'Inter',sans-serif;cursor:pointer">Пропустить, сделаю позже</button>
+  </div>
+</div>
+ 
 <!-- PAY MODAL -->
 <div class="moverlay" id="payM">
   <div class="modal" style="max-width:460px">
@@ -481,13 +555,11 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
       </div>
       <div style="font-size:11px;color:var(--text2);letter-spacing:1px;margin-bottom:10px">ОПЛАТА</div>
       <div class="pmethods">
-        <div class="pm on" id="pm-card" onclick="selMeth('card')"><span class="pmi">💳</span>Карта</div>
-        <div class="pm" id="pm-sbp" onclick="selMeth('sbp')"><span class="pmi">⚡</span>СБП</div>
-        <div class="pm" id="pm-yoo" onclick="selMeth('yoo')"><span class="pmi">💰</span>ЮMoney</div>
+        <div class="pm on" id="pm-sbp" onclick="selMeth('sbp')"><span class="pmi">⚡</span>СБП</div>
       </div>
       <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:16px">
         <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text2);margin-bottom:6px"><span>Подписка</span><span id="sPlan">1 мес.</span></div>
-        <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text2);margin-bottom:6px"><span>Способ</span><span id="sMethod">Карта</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text2);margin-bottom:6px"><span>Способ</span><span id="sMethod">СБП</span></div>
         <div style="height:1px;background:var(--border);margin:10px 0"></div>
         <div style="display:flex;justify-content:space-between;font-size:16px;font-weight:600"><span>Итого</span><span id="sTotal" style="color:var(--gold)">100 ₽</span></div>
       </div>
@@ -496,7 +568,7 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     </div>
   </div>
 </div>
-
+ 
 <!-- DASHBOARD -->
 <div class="dash" id="dash">
   <div class="dhead">
@@ -514,20 +586,65 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
       <div class="dc"><div class="dcl">До</div><div class="dcv" id="dExpiry">—</div><div class="dcs">Дата окончания</div></div>
       <div class="dc"><div class="dcl">Pegas ID</div><div class="dcv" id="dPegasCard" style="font-size:clamp(14px,3.5vw,22px)">—</div><div class="dcs">Привязка к боту</div></div>
     </div>
-
+ 
     <div class="dst">ПРИЛОЖЕНИЯ</div>
-    <div class="dagrid">
-      <a class="acard" href="https://apps.apple.com/app/v2raytun/id6476628951" target="_blank" style="background:var(--bg3)">
-        <div class="aiw"><svg width="34" height="34" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><path d="M22 8C14.27 8 8 14.27 8 22s6.27 14 14 14 14-6.27 14-14S29.73 8 22 8zm0 6a3 3 0 110 6 3 3 0 010-6zm0 20c-3.87 0-7.29-1.97-9.33-4.97.05-3.09 6.22-4.78 9.33-4.78s9.28 1.69 9.33 4.78A11.17 11.17 0 0122 34z" fill="#C9A84C"/></svg></div>
-        <div><div class="aname">v2RayTun</div><div class="aos">iOS · Android</div><div class="abadges"><div class="abadge">App Store</div><div class="abadge">Play</div></div></div>
-      </a>
-      <a class="acard" href="https://play.google.com/store/apps/details?id=com.happ.vpn" target="_blank" style="background:var(--bg3)">
-        <div class="aiw"><svg width="34" height="34" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <div><div class="aname">Happ</div><div class="aos">Android</div><div class="abadges"><div class="abadge">Play</div></div></div>
-      </a>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px">
+      <!-- iOS / Mac -->
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:14px 12px">
+        <div style="font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-bottom:10px">iPhone · iPad · Mac</div>
+        <a class="acard" href="https://apps.apple.com/ru/app/v2raytun/id6476628951" target="_blank" style="background:var(--bg2);margin-bottom:8px;padding:12px">
+          <div class="aiw" style="width:30px;height:30px"><svg width="30" height="30" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><path d="M22 8C14.27 8 8 14.27 8 22s6.27 14 14 14 14-6.27 14-14S29.73 8 22 8zm0 6a3 3 0 110 6 3 3 0 010-6zm0 20c-3.87 0-7.29-1.97-9.33-4.97.05-3.09 6.22-4.78 9.33-4.78s9.28 1.69 9.33 4.78A11.17 11.17 0 0122 34z" fill="#C9A84C"/></svg></div>
+          <div><div class="aname" style="font-size:12px">v2RayTun</div><div class="abadges"><div class="abadge">App Store</div></div></div>
+        </a>
+        <a class="acard" href="https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973" target="_blank" style="background:var(--bg2);padding:12px">
+          <div class="aiw" style="width:30px;height:30px"><svg width="30" height="30" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><div class="aname" style="font-size:12px">Happ</div><div class="abadges"><div class="abadge">App Store</div></div></div>
+        </a>
+      </div>
+      <!-- Android -->
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:14px 12px">
+        <div style="font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-bottom:10px">Android</div>
+        <a class="acard" href="https://play.google.com/store/apps/details?id=com.v2raytun.android" target="_blank" style="background:var(--bg2);margin-bottom:8px;padding:12px">
+          <div class="aiw" style="width:30px;height:30px"><svg width="30" height="30" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><path d="M22 8C14.27 8 8 14.27 8 22s6.27 14 14 14 14-6.27 14-14S29.73 8 22 8zm0 6a3 3 0 110 6 3 3 0 010-6zm0 20c-3.87 0-7.29-1.97-9.33-4.97.05-3.09 6.22-4.78 9.33-4.78s9.28 1.69 9.33 4.78A11.17 11.17 0 0122 34z" fill="#C9A84C"/></svg></div>
+          <div><div class="aname" style="font-size:12px">v2RayTun</div><div class="abadges"><div class="abadge">Google Play</div></div></div>
+        </a>
+        <a class="acard" href="https://play.google.com/store/apps/details?id=com.happproxy" target="_blank" style="background:var(--bg2);padding:12px">
+          <div class="aiw" style="width:30px;height:30px"><svg width="30" height="30" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><div class="aname" style="font-size:12px">Happ</div><div class="abadges"><div class="abadge">Google Play</div></div></div>
+        </a>
+      </div>
+      <!-- Windows -->
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:14px 12px">
+        <div style="font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-bottom:10px">Windows</div>
+        <a class="acard" href="https://storage.v2raytun.com/v2RayTun_Setup.exe" target="_blank" style="background:var(--bg2);margin-bottom:8px;padding:12px">
+          <div class="aiw" style="width:30px;height:30px"><svg width="30" height="30" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><rect x="8" y="8" width="12" height="12" rx="2" fill="#C9A84C"/><rect x="24" y="8" width="12" height="12" rx="2" fill="#C9A84C" opacity=".6"/><rect x="8" y="24" width="12" height="12" rx="2" fill="#C9A84C" opacity=".6"/><rect x="24" y="24" width="12" height="12" rx="2" fill="#C9A84C" opacity=".3"/></svg></div>
+          <div><div class="aname" style="font-size:12px">v2RayTun</div><div class="abadges"><div class="abadge">.exe</div></div></div>
+        </a>
+        <a class="acard" href="https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.1/setup-Happ.x64.exe" target="_blank" style="background:var(--bg2);padding:12px">
+          <div class="aiw" style="width:30px;height:30px"><svg width="30" height="30" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="11" fill="#111"/><path d="M14 32V18l14 7-14 7z" fill="#C9A84C"/><path d="M22 12v6M28 15l-3 5" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div><div class="aname" style="font-size:12px">Happ</div><div class="abadges"><div class="abadge">.exe</div></div></div>
+        </a>
+      </div>
+      <!-- Smart TV -->
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:14px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px">
+        <div style="font-size:10px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase">Smart TV</div>
+        <div style="font-size:28px">📺</div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.5">Samsung, LG,<br>Android TV</div>
+        <a href="https://telegra.ph/Instrukciya-po-podklyucheniyu-03-09-4" target="_blank" class="ibtn" style="font-size:11px;padding:9px 14px;width:100%">Инструкция</a>
+      </div>
     </div>
-
+ 
     <div class="dst" style="margin-top:24px">ПОДКЛЮЧЕНИЕ</div>
+    <div class="cbox">
+      <p>Автоимпорт — нажми при открытом приложении:</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px">
+        <a id="dImportV2" href="#" class="ibtn" onclick="doImport(event,'v2raytun')" style="font-size:12px;padding:10px 14px">Импорт в v2RayTun</a>
+        <a id="dImportHapp" href="#" class="ibtn" onclick="doImport(event,'happ')" style="font-size:12px;padding:10px 14px;background:var(--bg3);color:var(--gold);border:1px solid var(--gold-border)">Импорт в Happ</a>
+      </div>
+      <p style="margin-bottom:8px">Или скопируй ссылку:</p>
+      <div class="ckey" id="dImportUrl">Загрузка...</div>
+      <button class="cbtn" onclick="copyUrl('dImportUrl')">Скопировать ссылку</button>
+    </div>
     <div class="cbox">
       <p>Привяжи Telegram — это свяжет сайт и бот:</p>
       <div class="tgrow">
@@ -539,17 +656,7 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
       </div>
       <div class="tghint">Бот распознает ID и привяжет аккаунт автоматически</div>
     </div>
-    <div class="cbox">
-      <p>Автоимпорт — нажми при открытом приложении:</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px">
-        <a id="dImportV2" href="#" class="ibtn" onclick="doImport(event,'v2raytun')" style="font-size:12px;padding:10px 14px">Импорт в v2RayTun</a>
-        <a id="dImportHapp" href="#" class="ibtn" onclick="doImport(event,'happ')" style="font-size:12px;padding:10px 14px;background:var(--bg3);color:var(--gold);border:1px solid var(--gold-border)">Импорт в Happ</a>
-      </div>
-      <p style="margin-bottom:8px">Или скопируй ссылку:</p>
-      <div class="ckey" id="dImportUrl">Загрузка...</div>
-      <button class="cbtn" onclick="copyUrl('dImportUrl')">Скопировать ссылку</button>
-    </div>
-
+ 
     <div style="margin-top:20px"><div class="dst">ПРОДЛИТЬ</div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
         <button class="btn-gold" style="padding:12px 22px" onclick="openPay(1)">1 месяц — 100 ₽</button>
@@ -571,17 +678,17 @@ footer{border-top:1px solid var(--border);padding:32px 20px calc(32px + var(--sa
     </div>
   </div>
 </div>
-
+ 
 <div class="toast" id="toast"></div>
-
+ 
 <script>
-let U=JSON.parse(localStorage.getItem('pegasUser')||'null'),plan=1,meth='card';
-window.addEventListener('load',()=>U?loggedIn():loggedOut());
-
+let U=JSON.parse(localStorage.getItem('pegasUser')||'null'),plan=1,meth='sbp';
+window.addEventListener('load',()=>{U?loggedIn():loggedOut();checkPaymentReturn();});
+ 
 // NAV
 function toggleDrawer(){document.getElementById('drawer').classList.toggle('open')}
 function closeDrawer(){document.getElementById('drawer').classList.remove('open')}
-
+ 
 // HEADER
 function loggedIn(){
   document.getElementById('hbtns').innerHTML=`<button class="btn-ghost" onclick="openDash()">Кабинет</button><button class="btn-gold" onclick="doLogout()">Выйти</button>`;
@@ -605,9 +712,9 @@ function fillImport(){
   if(ud)ud.textContent=url;
 }
 function importUrl(){return`https://vpnbotfast.xyz/import?uid=${getUid()}`}
-function getUid(){if(!U.uid){U.uid=btoa(U.email).replace(/[^a-zA-Z0-9]/g,'').substring(0,16);save()}return U.uid}
+function getUid(){if(!U.uid){U.uid=btoa(U.phone||'user').replace(/[^a-zA-Z0-9]/g,'').substring(0,16);save()}return U.uid}
 function enc(s){return encodeURIComponent(s)}
-
+ 
 // MODAL
 function openM(tab){document.getElementById('authM').classList.add('active');swTab(tab);clrAlert()}
 function closeM(id){document.getElementById(id).classList.remove('active')}
@@ -620,7 +727,7 @@ function swTab(t){
   document.getElementById('tReg').classList.toggle('on',t==='register');
   clrAlert();
 }
-
+ 
 // AUTH
 function doLogin(){
   const phone=normalizePhone(v('lPhone').trim()),pass=v('lPass');
@@ -642,13 +749,19 @@ function doReg(){
   const id=genId(phone),uid=btoa(phone).replace(/[^a-zA-Z0-9]/g,'').substring(0,16);
   const user={phone,pass:btoa(pass),status:'trial',expiry:new Date(Date.now()+3*864e5).toISOString(),pegasId:id,uid,createdAt:new Date().toISOString()};
   users[phone]=user;localStorage.setItem('pegasUsers',JSON.stringify(users));
-  U=user;save();closeM('authM');loggedIn();openDash();toast('Аккаунт создан! 3 дня бесплатно 🎉');
+  U=user;save();closeM('authM');loggedIn();
+  // Показываем быструю привязку Telegram
+  document.getElementById('tgBindId').textContent='#'+id;
+  document.getElementById('tgBindLink').href=`https://t.me/pegas_vpn_bot?start=web_${id}`;
+  document.getElementById('tgBindWelcome').textContent='Привет! Аккаунт создан 🎉';
+  document.getElementById('tgBindM').classList.add('active');
+  startBindPolling(id);
 }
 function doLogout(){U=null;localStorage.removeItem('pegasUser');closeDash();loggedOut();toast('Вы вышли из аккаунта')}
 function dname(){return U?(U.phone||''):''}
 function normalizePhone(p){return p.replace(/[\s\-\(\)]/g,'')}
 function validPhone(p){return/^\+?[0-9]{10,15}$/.test(p)}
-
+ 
 // DASHBOARD
 function openDash(){
   if(!U){openM('login');return}
@@ -675,7 +788,7 @@ function openDash(){
   document.getElementById('dash').scrollTop=0;
 }
 function closeDash(){document.getElementById('dash').classList.remove('on')}
-
+ 
 // PAYMENT
 function openPay(months){
   plan=months;selPlan(months);
@@ -684,21 +797,93 @@ function openPay(months){
   document.getElementById('payC').style.display=U?'block':'none';
 }
 function selPlan(m){plan=m;document.getElementById('pp1').classList.toggle('on',m===1);document.getElementById('pp3').classList.toggle('on',m===3);updSum()}
-function selMeth(m){meth=m;['card','sbp','yoo'].forEach(id=>document.getElementById('pm-'+id).classList.toggle('on',id===m));document.getElementById('sMethod').textContent={card:'Карта',sbp:'СБП',yoo:'ЮMoney'}[m]}
+function selMeth(m){meth=m;document.getElementById('sMethod').textContent='СБП'}
 function updSum(){document.getElementById('sPlan').textContent=plan+' мес.';document.getElementById('sTotal').textContent=(plan===1?100:300)+' ₽'}
-function doPay(){
-  if(!U)return;closeM('payM');toast('Перенаправляем на оплату...');
-  setTimeout(()=>{
-    U.expiry=new Date(Date.now()+plan*30*864e5).toISOString();U.status='active';
-    const users=getUsers();users[U.email]=U;localStorage.setItem('pegasUsers',JSON.stringify(users));save();
-    openDash();toast('Подписка на '+plan+' мес. оформлена ✓');
-  },700);
+// ── PLATEGA CONFIG ──────────────────────────────────────────────
+// СЮДА ВСТАВЬ СВОИ ДАННЫЕ ПОСЛЕ ПОЛУЧЕНИЯ В ЛИЧНОМ КАБИНЕТЕ PLATEGA
+const PLATEGA_PROXY = 'https://YOUR_BACKEND.com/api/pay'; // URL твоего бэкенда
+const API_BASE      = 'https://YOUR_BACKEND.com';         // ← замени на https://vpnbotfast.xyz
+// ────────────────────────────────────────────────────────────────
+ 
+// Платёжные методы Platega: 1=CARD, 2=SBPQR, 3=USDT и др.
+const PLATEGA_METHODS = {card:2, sbp:2, yoo:2};
+const PRICES = {1:100, 3:300};
+ 
+async function doPay(){
+  if(!U) return;
+ 
+  const amount = PRICES[plan];
+  const orderId = `pegas_${U.pegasId||genId(U.phone)}_${Date.now()}`;
+  const payMethod = PLATEGA_METHODS[meth] || 1;
+ 
+  // Показываем спиннер
+  const btn = document.querySelector('#payC .fsub');
+  if(btn){ btn.disabled=true; btn.textContent='Создаём платёж...' }
+  toast('Создаём ссылку на оплату...');
+ 
+  try {
+    const res = await fetch(PLATEGA_PROXY, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        paymentMethod: payMethod,
+        paymentDetails: { amount, currency: 'RUB' },
+        description: `Pegas VPN — ${plan} мес. | ${U.phone}`,
+        return: window.location.href + '?payment=success&order=' + orderId,
+        failedUrl: window.location.href + '?payment=fail',
+        payload: JSON.stringify({ phone: U.phone, plan, orderId })
+      })
+    });
+ 
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+ 
+    if(data.redirect){
+      closeM('payM');
+      // Сохраняем pending заказ
+      localStorage.setItem('pegasPendingOrder', JSON.stringify({
+        orderId, plan, phone: U.phone,
+        transactionId: data.transactionId,
+        ts: Date.now()
+      }));
+      window.location.href = data.redirect;
+    } else {
+      throw new Error('Нет ссылки на оплату');
+    }
+  } catch(e) {
+    toast('Ошибка: ' + (e.message || 'попробуй позже'));
+    if(btn){ btn.disabled=false; btn.textContent='Оплатить' }
+  }
 }
-
+ 
+// Проверяем результат после возврата с оплаты
+function checkPaymentReturn(){
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('payment') === 'success'){
+    const pending = JSON.parse(localStorage.getItem('pegasPendingOrder') || 'null');
+    if(pending && U && pending.phone === U.phone){
+      // Активируем подписку (подтверждение придёт через callback на бэкенд)
+      U.expiry = new Date(Date.now() + pending.plan * 30 * 864e5).toISOString();
+      U.status = 'active';
+      const users = getUsers();
+      users[U.phone] = U;
+      localStorage.setItem('pegasUsers', JSON.stringify(users));
+      save();
+      localStorage.removeItem('pegasPendingOrder');
+    }
+    history.replaceState({}, '', window.location.pathname);
+    openDash();
+    toast('Оплата прошла успешно! Подписка активирована ✓');
+  } else if(params.get('payment') === 'fail'){
+    history.replaceState({}, '', window.location.pathname);
+    toast('Оплата не прошла. Попробуй ещё раз.');
+  }
+}
+ 
 // IMPORT
 function doImport(e,app){e.preventDefault();window.location.href=e.currentTarget.href;setTimeout(()=>toast('Если не открылось — скачай приложение сначала'),1500)}
 function copyUrl(id){const t=document.getElementById(id).textContent;navigator.clipboard.writeText(t).then(()=>toast('Ссылка скопирована'))}
-
+ 
 // HELPERS
 function v(id){return document.getElementById(id).value}
 function validEmail(e){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)}
@@ -709,6 +894,37 @@ function err(msg){document.getElementById('alertBox').innerHTML=`<div class="ale
 function clrAlert(){document.getElementById('alertBox').innerHTML=''}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),3000)}
 function gotoId(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
+function showPlt(id,btn){
+  ['ios','android','windows','tv'].forEach(p=>{
+    const el=document.getElementById('plt-'+p);
+    if(el) el.style.display=p===id?'block':'none';
+  });
+  document.querySelectorAll('.ptab').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+}
+ 
+// ── TELEGRAM BIND POLLING ──
+let _bindTimer = null;
+function startBindPolling(pegasId){
+  if(_bindTimer) clearInterval(_bindTimer);
+  let tries=0;
+  _bindTimer = setInterval(async()=>{
+    tries++;
+    if(tries>100){ clearInterval(_bindTimer); return; } // 5 минут
+    try{
+      const res = await fetch(`${API_BASE}/api/bind/status?pegasId=${pegasId}`);
+      const data = await res.json();
+      if(data.bound){
+        clearInterval(_bindTimer);
+        closeM('tgBindM');
+        openDash();
+        toast('Telegram успешно привязан ✅');
+      }
+    }catch(e){}
+  }, 3000);
+}
+function stopBindPolling(){ if(_bindTimer){ clearInterval(_bindTimer); _bindTimer=null; } }
 </script>
 </body>
 </html>
+ 
